@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+/* Reused/Global Styling */
+
+.pageTitle {
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0 50px 0;
+  font-size: 2.5rem;
+}
+
+.sectionTitle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto 50px auto;
+  font-size: 2.5rem;
+}
+
+#navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px 0 10px 0;
+  background-color:#404040;
+  color: white;
+  text-decoration: none;
+}
+
+/* Song Card & Liked Song Card */
+
+.emptyHeart, .fullHeart {
+  cursor: pointer;
+  color: #E31B23;
+  scale: 2.5;
+  margin-right: 125px;
+  z-index: 5;
+}
+
+.spotifyLogo {
+  cursor: pointer;
+  color: #1DB954;
+  scale: 2.5;
+}
+
+.audioPlaylistSpan {
+  display: inline-flex;
+  margin: 50px 0 0 0;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  overflow: visible;
+}
+
+.songCardAudio {
+  margin: 0 0 15px 0;
+  width: 200px;
+}
+
+.playlistDropdown {
+  overflow: visible;
+  z-index: 10;
+}
+
+.songCardDropdownMenu {
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  overflow: visible;
+}
+
+.songCardDropdownMenu.dropdown-menu.show {
+  z-index: 100;
+  overflow: visible;
+}
+
+/* SEARCH PAGE */
+
+/* Track Lists */
+
+.trackListSpan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trackListAudio {
+  position: absolute;
+  align-items: center;
+  justify-content: flex-end;
+  right: 175px;
+  height: 50px;
+  width: 350px;
+}
+
+.trackListEmptyHeart, .trackListFullHeart {
+  cursor: pointer;
+  position: absolute;
+  right: 125px;
+  color: #E31B23;
+  scale: 2.5;
+}
+
+.trackListDropdown {
+  display: inline-flex;
+  cursor: pointer;
+  scale: 2;
+}
+
+/* PLAYLIST PAGE */
+
+.playlistAccordion {
+  margin: 2.5rem 0 2.5rem 0;
+  position: relative;
+}
+
+.playlistAccordionBody {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.playlistAccordionImage {
+  width: 50px;
+  margin-left: 0;
+  border-radius: 7.5px;
+}
+
+.playlistAccordionAudio {
+  position: absolute;
+  right: 75px;
+  height: 50px;
+  width: 350px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* NavBar/Header Styling */
+
+.navBarLink {
+  padding: 2.5px;
+  margin: 2.5px 25px 2.5px 25px;
+  color: white;
+  border-radius: 25%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navBar {
+  background-color:#404040;
+  color: white;
+  text-decoration: none;
+}
+
+.menuSpan {
+  padding: 2.5px;
+  margin: 2.5px 25px 2.5px 25px;
+  color: white;
+  border-radius: 25%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Home Page Styling */
+
+#homePageTitle {
+  font-size: 3.5rem;
+}
+
+.homePageDiv {
+  margin: 40px 0 40px 0;
+}
+
+.carousel {
+  margin-top: -15px;
+  z-index: 5;
+}
